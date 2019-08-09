@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body id="bdy">
+    <h2>My First Page</h2>
+    <p id="demo"></p>
+
+    <h3>Click the button to obtain the path of the file</h3>
+    <button id="urlbutton">Click</button>
+    <h4 id="link"></h4>
+
+    <form name="form1" onsubmit="return greet()">
+
+        <div>
+            <label>Name</label>
+            <input type="text" id="name" name="Name">
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="print">
+        </div>
+
+    </form>
+
+    <form name="form2">
+
+        <h3>Change the background color</h3>
+
+        <label>changeBackground color</label>
+        <!--<select name="bgcolor " onchange="bgchange() ">-->
+        <select id="drop">
+			<option id="1 " value="Black">Black</option>
+			<option id="2 " value="Green">Green</option>
+			<option id="3 " value="white">White</option>
+			<option id="4 " value="Red">Red</option>			
+		</select>
+    </form>
+
+    <form name="form3" onsubmit="return changeclass()">
+        <h3 id="classhead">If the value added to the textbox is more than 100 the class of this heading</h3>
+
+        <div>
+            <label>Enter a number</label>
+            <input type="text" id="ClassModifierNumber" name="num">
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="ChangeClass" id="classchangebtn">
+        </div>
+
+    </form>
+
+    <br>
+    <br>
+    <form>
+        <div>
+            <label>Select the car company</label>
+            <select id="carcompany">
+                <option  selected="true" disabled="disabled">Select a car company</option>
+                <option value="1" >Honda</option>
+                <option value="2" >Suzuki</option>
+                <option value="3" >Mahindra</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <label>Select the model of the car</label>
+            <select id="carmodel">
+                <option  selected="true" disabled="disabled">Select a model</option>
+                <option value="1-1">Civic</option>
+                <option value="1-2">Jazz</option>
+                <option value="2-3">Swift</option>
+                <option value="2-4">Nexa</option>
+                <option value="3-5">Xuv500</option>
+                <option value="3-6">Tuv300</option>
+            </select>
+        </div>
+
+    </form>
+
+    <br>
+    <br>
+
+    <form>
+        <div id="formbtn">
+            <label>Enter phone number</label>
+            <input type="tel" id="PNumber" name="PNumber">
+
+            <input type="submit" value="Generate OTP">
+        </div>
+
+        <div id="otpsection">
+            <label>Enter OTP</label>
+            <input type="tel" id="OTP" name="OTP">
+        </div>
+
+        <div id="otpimagesection">
+            <img src="../images/OTP.jpg">
+        </div>
+
+    </form>
+
+    <div style="margin-top: 500px">
+
+
+
+        <!--Remeber the jquery source file script tag should be added before the external file is linked-->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js "></script>
+        <script type="text/javascript " src="../JavaScript/file.js "></script>
+
+
+
+</body>
+
+</html>
